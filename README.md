@@ -36,19 +36,34 @@ Extract → Transform → Load processed data
 | Data Normalization      | STRING_SPLIT + CROSS APPLY      |
 | Missing Value Imputation | Director-Country mapping logic |
 | Type Conversion         | CAST/CONVERT with error handling|
-| Relationship Modeling   | Star schema implementation     |
+| Relationship Modeling   | Star schema implementation      |
+
+#### Before Transformation
+![original_table](https://github.com/user-attachments/assets/0a7183ca-64b1-4756-9afe-7f41bf1edcd2)
+
+#### After Transformation
+![tranformed_table](https://github.com/user-attachments/assets/a35c0606-bb5f-4f1b-a8b1-9aff0b1a0dd7)
 
 ## 📊 Analytical Insights
 We answer key business questions through SQL-powered analysis:
 1. **Hybrid Directors**: Who produces both movies AND TV shows?
+   ![Q1](https://github.com/user-attachments/assets/db60429b-28c0-44d7-bf72-43d0e5182598)
+
 2. **Comedy Hotspots**: Which country dominates comedy content?
-3. **Annual Champions**: Top director by added-year volume
-4. **Genre Runtime**: Average duration by content category
-5. **Genre-Blenders**: Directors mastering horror AND comedy
+   ![Q2](https://github.com/user-attachments/assets/aa7ff5bd-00c3-444b-acca-83fcab88e90b)
+
+5. **Annual Champions**: Top director by added-year volume
+    ![Q3](https://github.com/user-attachments/assets/cffcd9bc-742f-47f2-aa0b-63b7a15e0e5e)
+    
+6. **Genre Runtime**: Average duration by content category
+    ![Q4](https://github.com/user-attachments/assets/ecd2e8a7-ab80-4d0c-bfc2-5cd59ec16ea3)
+
+7. **Genre-Blenders**: Directors mastering horror AND comedy
+    ![Q5](https://github.com/user-attachments/assets/4ec113bb-f6dd-44e9-81da-1949766742e6)
+
 
 ## 🛠️ Technical Stack
 - **Extraction**: Python (Pandas)
 - **Storage**: SQL Server
-- **Transformation**: T-SQL
-- **Analysis**: SQL Window Functions
+- **Transformation**: SQL
 
